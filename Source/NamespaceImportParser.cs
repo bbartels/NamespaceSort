@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-internal class InvalidParseException : Exception
+public class InvalidParseException : Exception
 {
     public InvalidParseException(string message) : base(message) { }
 }

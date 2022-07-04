@@ -1,7 +1,7 @@
 namespace NamespaceSort;
 using System.Text;
 
-class NamespaceGroupWriter
+internal class NamespaceGroupWriter
 {
     private readonly NamespaceGroupContainer _container;
     public NamespaceGroupWriter(NamespaceGroupContainer container) => _container = container;

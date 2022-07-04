@@ -35,8 +35,8 @@ internal static class AssertExtensions
         IEnumerable<SyntaxList<UsingDirectiveSyntax>> expected)
     {
         Assert.NotNull(actual);
-        Assert.Equal(expected.Count(), actual.Count());
-        foreach(var groupPair in actual.Zip(expected))
+        Assert.Equal(expected.Count(), actual!.Count());
+        foreach(var groupPair in actual!.Zip(expected))
         {
             var result = groupPair.First.Zip(groupPair.Second);
             foreach((var expectedUsing, var actualUsing) in result)

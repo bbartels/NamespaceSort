@@ -3,7 +3,7 @@ namespace NamespaceSort;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-internal class NamespaceSorter
+public class NamespaceSorter
 {
     private readonly NamespaceGroupConfiguration _groupCollection;
 
